@@ -1,0 +1,64 @@
+Performing grid search...
+pipeline: ['tfidf_vect', 'el_clf']
+parameters:
+{'el_clf__alpha': [0.001, 0.01, 0.1],
+ 'el_clf__l1_ratio': [0.1, 0.15, 0.2],
+ 'tfidf_vect__min_df': [1, 2],
+ 'tfidf_vect__ngram_range': [(1, 2), (1, 3)]}
+Fitting 5 folds for each of 36 candidates, totalling 180 fits
+[Parallel(n_jobs=-1)]: Using backend LokyBackend with 2 concurrent workers.
+[Parallel(n_jobs=-1)]: Done  46 tasks      | elapsed:   54.4s
+[Parallel(n_jobs=-1)]: Done 180 out of 180 | elapsed:  3.5min finished
+done in 209.715s
+
+Best score: 0.593
+Best parameters set:
+	el_clf__alpha: 0.001
+	el_clf__l1_ratio: 0.1
+	tfidf_vect__min_df: 2
+	tfidf_vect__ngram_range: (1, 2)
+
+
+
+
+Performing grid search...
+pipeline: ['tfidf_vect', 'el_clf']
+parameters:
+{'el_clf__alpha': [0.0001, 0.0005, 0.001],
+ 'el_clf__l1_ratio': [0.08, 0.1, 0.13],
+ 'tfidf_vect__min_df': [2],
+ 'tfidf_vect__ngram_range': [(1, 2), (1, 1)]}
+Fitting 5 folds for each of 18 candidates, totalling 90 fits
+[Parallel(n_jobs=-1)]: Using backend LokyBackend with 2 concurrent workers.
+[Parallel(n_jobs=-1)]: Done  46 tasks      | elapsed:   24.4s
+[Parallel(n_jobs=-1)]: Done  90 out of  90 | elapsed:   45.8s finished
+done in 46.044s
+
+Best score: 0.603
+Best parameters set:
+	el_clf__alpha: 0.001
+	el_clf__l1_ratio: 0.1
+	tfidf_vect__min_df: 2
+	tfidf_vect__ngram_range: (1, 1)
+
+
+
+
+Performing grid search...
+pipeline: ['tfidf_vect', 'el_clf']
+parameters:
+{'el_clf__alpha': [0.0009, 0.001, 0.002],
+ 'el_clf__l1_ratio': [0.09, 0.1, 0.11],
+ 'tfidf_vect__min_df': [2],
+ 'tfidf_vect__ngram_range': [(1, 1)]}
+Fitting 5 folds for each of 9 candidates, totalling 45 fits
+[Parallel(n_jobs=-1)]: Using backend LokyBackend with 2 concurrent workers.
+[Parallel(n_jobs=-1)]: Done  45 out of  45 | elapsed:   11.4s finished
+done in 11.706s
+
+Best score: 0.603
+Best parameters set:
+	el_clf__alpha: 0.001
+	el_clf__l1_ratio: 0.1
+	tfidf_vect__min_df: 2
+	tfidf_vect__ngram_range: (1, 1)
